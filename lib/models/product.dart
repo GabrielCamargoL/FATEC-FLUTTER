@@ -8,12 +8,12 @@ class Product {
   static getProducts() {
     List<Product> products = [
       Product(
-        title: 'Guitarra Ibanez Rg350 stratocaster',
+        title: 'Guitarra Ibanez Rg350',
         image: 'assets/images/ibanez-rg350.png',
         price: 2599.00,
       ),
       Product(
-        title: 'Guitarra Gibson Les Paul Standard',
+        title: 'Guitarra Gibson Les Paul',
         image: 'assets/images/gibson-lespaul.png',
         price: 3000.00,
       ),

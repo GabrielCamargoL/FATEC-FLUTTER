@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'listProductsScreen.dart';
+import 'list_products_screen.dart';
 
 class FormData {
   String name;
@@ -10,12 +10,14 @@ class FormData {
 }
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  LoginScreenState createState() => LoginScreenState();
 }
 
 //--------------- Login ---------------
-class _LoginScreenState extends State<LoginScreen> {
+class LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final _formData = FormData(password: '', name: '');
 
