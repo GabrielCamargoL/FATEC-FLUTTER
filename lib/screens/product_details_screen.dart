@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop/models/product.dart';
 import 'package:shop/screens/appreciation_screen.dart';
+import 'package:shop/screens/list_products_screen.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   final Product product;
@@ -67,26 +68,47 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                'Preço Total: \$${widget.calcularPrecoTotal().toStringAsFixed(2)}',
+                'Preço Total: R\$ ${widget.calcularPrecoTotal().toStringAsFixed(2)}',
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 32),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(220, 70, 20, 43),
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AppreciationScreen(),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(220, 70, 20, 43),
+                      foregroundColor: Colors.white,
                     ),
-                  );
-                },
-                child:
-                    const Text('FINALIZAR COMPRA', textAlign: TextAlign.center),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ListProductsScreen(),
+                        ),
+                      );
+                    },
+                    child: const Text('VOLTAR', textAlign: TextAlign.center),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(220, 70, 20, 43),
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AppreciationScreen(),
+                        ),
+                      );
+                    },
+                    child: const Text('FINALIZAR COMPRA',
+                        textAlign: TextAlign.center),
+                  ),
+                ],
               ),
             ],
           ),

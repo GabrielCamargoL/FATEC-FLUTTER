@@ -24,6 +24,11 @@ class AppreciationScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
+                'Pedido Confirmado',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 16),
+              const Text(
                 'Obrigado por comprar!',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),

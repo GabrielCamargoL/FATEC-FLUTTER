@@ -1,16 +1,21 @@
-# shop
+# 🎸🎶 GabStore 🎸🎶
 
-A new Flutter project.
+Aplicativo que permite visualizar produtos e comprar de itens músicais.
 
-## Getting Started
+> 🛠️ 🖥️ Tecnologias e ferramentas: Flutter, Android Studio, Visual Studio Code.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Estrutura de pastas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+📂 gabstore
+|- 📁 assets
+|--- 📁 images
+|- 📁 lib
+|--- 📁 models
+|--- 📁 screens
+|--- 📁 widgets
+|--- 📄 main.dart
+|- 📄 pubspec.yaml
+```
