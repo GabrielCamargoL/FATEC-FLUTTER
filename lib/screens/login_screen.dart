@@ -82,8 +82,7 @@ class LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              ListProductsScreen(formData: _formData)),
+                          builder: (context) => ListProductsScreen()),
                     );
                   }
                 },
